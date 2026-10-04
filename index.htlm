@@ -1,112 +1,214 @@
+
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TRANS-SAHARA</title>
+<title>TRANS-SAHARA</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4e4c1;
-      color: #2b2118;
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #1d1d1d;
+}
+
+header {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+
+    background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+      url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    max-width: 850px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    font-size: 1.35rem;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+section {
+    padding: 55px 25px;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.photo-section {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+      url("https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    background: rgba(0,0,0,0.55);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.route {
+    background: #a75b25;
+}
+
+.route-grid {
+    display: grid;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.stage {
+    background: rgba(255,255,255,0.12);
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.adventure {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+
+    background:
+      linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+      url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.values {
+    background: #173f35;
+}
+
+footer {
+    background: #111;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
     }
 
-    header {
-      background: #9b4a24;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    header h1 {
-      font-size: 42px;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 20px;
+    .subtitle {
+        font-size: 1.15rem;
     }
 
     section {
-      padding: 30px 20px;
-      max-width: 900px;
-      margin: auto;
+        padding: 45px 20px;
     }
-
-    h2 {
-      color: #9b4a24;
-    }
-
-    .etapes {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-
-    footer {
-      background: #2b2118;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>TRANS-SAHARA</h1>
-  <p>Una aventura. Un camí. Un Marroc per descobrir.</p>
+    <div class="hero">
+        <h1>TRANS-SAHARA</h1>
+
+        <p class="subtitle">
+            Una gran ruta d'aventura pel Marroc que uneix
+            paisatge, esport, cultura i població local.
+        </p>
+    </div>
 </header>
 
+
 <section>
-  <h2>El Camí del Desert</h2>
+    <div class="content">
 
-  <p>
-    TRANS-SAHARA és una gran ruta d'aventura pel Marroc,
-    pensada per descobrir el territori, la seva gent,
-    els seus paisatges i la seva cultura d'una manera diferent.
-  </p>
+        <h2>Una aventura diferent</h2>
 
-  <div class="etapes">
-    <h2>La Ruta</h2>
+        <p>
+            TRANS-SAHARA neix amb la idea de crear una gran ruta
+            d'aventura pel Marroc, pensada per descobrir el territori
+            d'una manera activa, sostenible i respectuosa.
+        </p>
 
-    <p>🟠 Marrakech → El Jadida</p>
-    <p>🟠 El Jadida → Safi</p>
-    <p>🟠 Safi → Essaouira</p>
-    <p>🟠 Essaouira → Agadir</p>
-    <p>🟠 Agadir → Marrakech</p>
-  </div>
+        <p>
+            El projecte combina natura, esforç físic, paisatge,
+            cultura i convivència amb les poblacions locals.
+            Cada participant podrà viure la ruta al seu ritme
+            i convertir cada etapa en una experiència diferent.
+        </p>
 
-  <h2>L'aventura</h2>
-
-  <p>
-    Caminant, amb buggy de pedals, amb camell i amb activitats
-    especials al llarg del recorregut.
-  </p>
-
-  <p>
-    Cada aventurer tindrà la seva credencial TRANS-SAHARA
-    i anirà completant les diferents etapes del camí.
-  </p>
-
-  <h2>La nostra filosofia</h2>
-
-  <p>
-    Respectar el territori, protegir el medi ambient
-    i fer que les poblacions locals siguin protagonistes
-    i beneficiàries del projecte.
-  </p>
+    </div>
 </section>
 
-<footer>
-  TRANS-SAHARA · Morocco Adventure Route
-</footer>
 
-</body>
-</html>
+<section class="photo-section">
+    <div class="content">
+
+        <div class="card">
+
+            <h2>Una ruta per viure el territori</h2>
+
+            <p>
+                Caminar, pedalar amb buggy manual, recórrer trams
+                amb dromedari i incorporar activitats especials
+                com tirolines o globus captius en punts seleccionats.
+            </p>
+
+            <p>
+                No es tracta simplement d'arribar a una destinació,
+                sinó de viure tot el recorregut.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="route">
+
+    <div class="content">
+
+        <h2>La ruta TRANS-SAHARA</h2>
+
+        <p>
+            El
